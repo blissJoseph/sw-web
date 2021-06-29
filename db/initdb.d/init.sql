@@ -5,7 +5,7 @@ USE db;
 CREATE TABLE IF NOT EXISTS `model` (
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `equipment_company` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `equipment_model` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `equipment_model` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
