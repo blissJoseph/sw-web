@@ -147,7 +147,7 @@ export default {
     },
 
     resultList: [{ spindle: '데이터없음', feedrate: '데이터없음'}],
-    elementList: [{ name: 'test'},{ name: 'test' },{ name: 'test' }],
+    elementList: [{ name: 'test1'},{ name: 'test2' },{ name: 'test3' }],
     toolList: {
       gonggugyung: [
         { type: 'gg', name: '01', value: 1 },
@@ -321,6 +321,8 @@ export default {
   
   overflow-x: auto;
   overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .dropdown-custom-item {
   display: flex;

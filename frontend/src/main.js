@@ -12,7 +12,7 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'http://localhost:3000/'
+axios.defaults.baseURL = 'http://61.97.183.233:3000/'
 Vue.prototype.$axios = axios
 new Vue({
   render: h => h(App),
