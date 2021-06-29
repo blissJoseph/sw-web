@@ -24,14 +24,16 @@ export default {
 <style scoped>
 .wrapper {
   display: flex;
+  width: 1920px;
+  height: 1080px;
   padding: 16px;
 }
 .title {
   display: flex;
   margin-right: 8px;
   align-items: center;
-  padding: 16px;
-  font-size: 24px;
+  padding: 32px;
+  font-size: 28px;
   font-weight: bold;
   background-color: #ccc;
 }

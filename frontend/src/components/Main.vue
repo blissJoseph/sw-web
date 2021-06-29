@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="body">
-      <div class="dropdown-wrapper">
+      <div class="dropdown-wrapper" style="flex: 1">
         <div class="dropdown-custom-item">
           <div class="dropdown-title">원소재</div>
           <div class="dropdown-button" @click="elementOpened=!elementOpened">
@@ -47,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div class="dropdown-wrapper" style="width: 576px;">
+      <div class="dropdown-wrapper" style="flex: 5">
         <div class="dropdown-custom-item">
           <div class="dropdown-title">공구</div>
           <div class="dropdown-button" @click="toolOpened=!toolOpened">
@@ -71,7 +71,7 @@
           </div>
         </div>
       </div>
-      <div class="dropdown-wrapper" style="width: 576px;">
+      <div class="dropdown-wrapper" style="flex: 5">
         <div class="dropdown-custom-item">
           <div class="dropdown-title">설비명</div>
           <div class="dropdown-button" @click="processingOpened=!processingOpened">
@@ -252,7 +252,9 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  width: 1350px;
+  min-width: 1350px;
+  max-width: 1920px;
+  min-height: 1080px;
   background-color: #f7f7f7;
 }
 .header {
@@ -279,8 +281,8 @@ export default {
 .title-head {
   align-items: center;
   flex: 1;
-  font-size: 18px;
-  padding: 4px;
+  font-size: 20px;
+  padding: 8px;
   background-color: #ccc;
 }
 .title-body {
@@ -307,14 +309,14 @@ export default {
   display: flex;
   margin: 4px 0px;
   
-  max-width: 800px;
-  height: 58px;
+  max-width: 900px;
+  height: 80px;
 }
 .dropdown-tool {
   display: -webkit-inline-box;
   margin: 4px 0px;
-  width: 560px;
-  height: 58px;
+  width: 800px;
+  height: 80px;
   flex-wrap: nowrap;
   
   overflow-x: auto;
@@ -324,8 +326,8 @@ export default {
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
-  width: 132px;
-  font-size: 24px;
+  width: 210px;
+  font-size: 30px;
   box-shadow: 0px 2px 10px rgba(0, 30, 130, 0.1);
 }
 .dropdown-item-child {
@@ -347,53 +349,63 @@ export default {
   display: flex;
   flex-direction: column;
   margin-top: 8px;
-  max-width: 560px;
+  max-width: 805px;
   border: 1px solid #ccc;
 }
 .dropdown-content-head {
   margin: 4px;
-  width: 120px !important;
-  padding: 8px 2px;
+  width: 200px !important;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 8px;
   border: 1px solid #ccc;
-  font-size: 18px;
+  font-size: 24px;
   background-color: #ccc;
 }
 .dropdown-content-item {
   margin: 4px;
-  width: 120px !important;
-  height: 50px;
+  width: 200px !important;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   padding: 8px 2px;
   border: 1px solid #ccc;
-  font-size: 20px;
+  font-size: 24px;
   background-color: #ccc;
   box-shadow: 0px 2px 10px rgba(0, 30, 130, 0.1);
   cursor: pointer;
 }
 .dropdown-content-item-empty {
   margin: 4px;
-  width: 120px !important;
-  height: 50px;
+  width: 200px !important;
   padding: 8px 2px;
   border: 1px solid #ccc;
-  font-size: 20px;
+  font-size: 24px;
   background-color: #fff;
 }
 .dropdown-content-item-child {
   margin: 4px;
-  width: 100px !important;
+  width: 140px !important;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   padding: 8px 2px;
   border: 1px solid #ccc;
-  font-size: 20px;
+  font-size: 24px;
   background-color: #ccc;
-    box-shadow: 0px 2px 10px rgba(0, 30, 130, 0.1);
+  box-shadow: 0px 2px 10px rgba(0, 30, 130, 0.1);
   cursor: pointer;
 }
 .dropdwon-empty-child {
   margin: 4px;
-  width: 100px !important;
+  width: 140px !important;
   padding: 8px 2px;
   border: 1px solid #ccc;
-  font-size: 20px;
+  font-size: 24px;
   background-color: #fff;  
 }
 .dropdown-content-item:hover {
@@ -407,22 +419,23 @@ export default {
 }
 .footer {
   display: flex;
+  margin-top: auto;
 }
 .footer-content {
   flex: 1;
   display: flex;
   margin-right: 2px;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   box-shadow: 0px 2px 10px rgba(0, 30, 130, 0.1);
 }
 .footer-content-title {
-  padding: 8px;
+  padding: 16px;
   background-color: #ccc;
 }
 .footer-content-result {
-  padding: 8px;
+  padding: 16px;
   background-color: #fff;
   border: 1px solid #ccc;
 
