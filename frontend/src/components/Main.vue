@@ -73,7 +73,7 @@
       </div>
       <div class="dropdown-wrapper" style="flex: 5">
         <div class="dropdown-custom-item">
-          <div class="dropdown-title">설비명</div>
+          <div class="dropdown-title">가공 조건</div>
           <div class="dropdown-button" @click="processingOpened=!processingOpened">
             <b-icon-chevron-down ></b-icon-chevron-down>
           </div>
